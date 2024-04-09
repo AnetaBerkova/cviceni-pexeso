@@ -1,5 +1,9 @@
 console.log('Funguju!')
 
+function otocKarticku() {
+this.classList.toggle('otocena')}
+
 const karticky = document.querySelectorAll('.karticka')
 
-karticky[0].classList.remove('otocena')
+karticky.forEach(karticka => {
+karticka.addEventListener('click', otocKarticku)})
